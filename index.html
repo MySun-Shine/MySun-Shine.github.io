@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+        /*body{
+            position:fixed;
+            display:block;
+            z-index:0;
+            top:0;
+            left:0;
+            width:100%;
+            height:100vh;
+            background-size:cover;
+            background-position:center;
+            background-image: url('img/02.jpg');
+        }
+    */
+    </style>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+
+    <!--<li><a href="javascript:void(0)"><img src="img/me.jpg" alt="" class="img-circle"></a></li>-->
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="myself">
+            <div class="my-left">
+                <div class="opac">
+                    <a href="javascript:void(0)"><img src="img/me.jpg" alt="" class="img-circle"></a>
+                    <p>LittleCat</p>
+                    <p>To be happy is to be happy</p>
+                    <div class="visible-lg">
+                        <p class="line"></p>
+                        <p class="text">嗨，我是LittleCat,一个活泼又调皮的小女孩，目前在学习前端，如有这方面的大神可以带我一起飞哦！</p>
+                        <p class="line"></p>
+                    </div>
+                    <nav id="nav-bar" class="navbar navbar-default">
+                        <div class="container-fluid">
+
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                    aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                                <a class="navbar-brand" href="#">
+                                    <span class="icon-uniE920"></span>
+
+                                    <span class="icon-uniE921"></span>
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                                    <li class="heima"><a href="#">黑马</a></li>
+                                    <li class="gay"><a href="#">基友</a></li>
+                                    <li><a href="http://www.bootcss.com/" target="_blank">bootstrap</a></li>
+
+                                    <li><a href="http://tieba.baidu.com/f?kw=%C3%A8&fr=ala0&tpl=5" target="_blank">Love-cat</a></li>
+                                </ul>
+
+                                <!--<ul class="nav navbar-nav navbar-right visible-lg visible-md">
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+
+                            </ul>-->
+                            </div>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="my-right">
+
+            <p id="part" style="display:none"></p>
+        </div>
+        <div class="videos">
+            <video controls style="display:none">
+                <source src="video/QQ.mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script type="text/javascript " src="lib/bootstrap/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript " src="lib/bootstrap/js/bootstrap.min.js "></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // $('#part').css('textIndent','2em');
+        $('.heima').click(function () {
+            $(".videos").css('display', 'none');
+            $('.my-right').css('display', 'block');
+
+        })
+        $('.my-right').dblclick(function () {
+           
+            $('#part').show();
+            $('#part').text(
+                '有一对情侣，男的非常懦弱,做什么事情之前都让女友先试。女友对此十分不满。一次，两人出海，返航时，飓风将小艇摧毁，幸亏女友抓住了一块木板才保住了两人的性命。女友问男友：“你怕吗？”男友从怀中掏出一把水果刀，说：“怕，但有鲨鱼来，我就用这个对付它。”女友只是摇头苦笑。 不久，一艘货轮发现了他们，正当他们欣喜若狂时，一群鲨鱼出现了， 女友大叫：“我们一起用力游，会没事的！”男友却突然用力将女友推进海里，扒着木板朝货轮游去，并喊道：“这次我先试！”女友惊呆了，望着男友的背影， 感到非常绝望。鲨鱼正在靠近，可鲨鱼对女友不感兴趣而径直向男友游去， 男友被鲨鱼凶猛地撕咬着，他发疯似地冲女友喊道：“我爱你！”女友获救了，甲板上的人都在默哀，船长坐到女友身边说： “小姐，他是我见过最勇敢的人。我们为他祈祷！” “不，他是个胆小鬼。”女友冷冷地说。 “您怎么这样说呢？刚才我一直用望远镜观察你们， 我清楚地看到他把你推开后用刀子割破了自己的手腕。 鲨鱼对血腥味很敏感，如果他不这样做来争取时间，恐怕你永远不会出现在这艘船上。”“什么？”女友听到真相如同晴天霹雳，她悲痛欲绝，伤心无比，但她突然想到男友是黑马的一名学员。 只有在黑马培训出来的程序员才有这么高的觉悟，黑马培训出来的同学品质优异，有强大的博学雅正融合的意识，并具备强大的心理承受能力，人文情怀，领袖气质，个个都是老师的好助手，同学的好伙伴。选择黑马，就是选择成功！'
+            );
+
+            initialize();
+        })
+        $('.gay').click(function () {
+            clearTimeout(timer);
+            $('#part').text("");
+            $('.my-right').css('display', 'none');
+            $('.videos').css('display', 'block');
+             $("video").css('display', 'none');
+        })
+
+         $('.videos').dblclick(function () {
+            $("video").css('display', 'block');
+           
+
+        })
+    });
+    //字体逐个显示
+    var it = 0;
+    var mytext;
+
+    function initialize() {
+        mytext = $("#part").text();
+        // var myheight = $("#part").offsetHeight;
+       
+        $("#part").text("");
+        // $("#part").css("height", myheight);
+        $("#part").show();
+        typeit();
+    }
+    var timer;
+   
+    function typeit() {
+        $("#part").append(mytext.charAt(it));
+
+        if (it < mytext.length - 1) {
+            it++;
+            timer = setTimeout('typeit()', 200);
+            // console.log(it);
+
+
+        } else {
+            it = 0;
+          clearTimeout(timer);
+        }
+    }
+
+
+    // var imgs=['bg1.png','bg7.jpg','bg06.jpg','bg08.jpg','bg05.jpg'];
+    // var i=1;
+    // var timer2=setInterval(function(){
+    //     if(i>imgs.length-1) i=0;
+    // $('.my-right').css('backgroundImage','url('+'img/'+imgs[i]+')');
+    //   i++;
+    // },800)
+
+
+</script>
